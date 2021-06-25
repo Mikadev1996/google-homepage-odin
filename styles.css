@@ -1,6 +1,158 @@
-li {
+* {
+    padding: 0;
+    margin: 0;
     list-style: none;
-    display: inline;
-    margin: 0px;
-    padding: 0px;
+}
+
+form:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #222;
+}
+
+nav {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    width: 50%;
+    padding: 12px;
+    align-items: center;
+    list-style: none;
+}
+
+li {
+    padding: 4px;
+}
+
+#nav-one {
+    justify-content: start;
+}
+
+#nav-two {
+    margin-right: 20px;
+    justify-content: flex-end;
+}
+
+#sign-in {
+    background: #1a73e8;
+    color: white;
+    padding: 8px 22px;
+    border-radius: 4px;
+    font-size: 14px;
+
+    
+}
+
+#sign-in:hover {
+    background: #2b7de9;
+    box-shadow: 0 1px 2px 0 rgb(66 133 244 / 30%), 0 1px 3px 1px rgb(66 133 244 / 15%);
+
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 150px;
+}
+
+input:active, input::selection, input:hover, input {
+    outline: none;
+}
+
+.search-buttons {
+    display: flex;
+    flex-direction: row;
+    min-width: 300px;
+}
+
+#lucky, #gsearch {
+    padding: 10px;
+    background: #f8f9fa;
+    margin: 10px 5px;
+    border-radius: 5px;
+}
+
+#gsearch:hover, #lucky:hover {
+    border: 1px solid #dadce0;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+}
+
+
+#search-icon {
+    width: 15px;
+    opacity: 50%;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    width: 65vw;
+    border: 1px solid #dfdfdf;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+footer {
+    color: rgba(0,0,0,.54);
+}
+
+#top-foot {
+    background: #eee;
+    width: 100vw;
+    position: fixed;
+    bottom: 100px;
+    z-index: 10;
+    height: 10px;
+    padding: 18px;
+    border-bottom: solid 1px #dadce0;
+}
+
+#carbon {
+    height: 20px;
+    padding: 15px;
+    width: 100%;
+    background: #eee;
+    text-align: center;
+    position: fixed;
+    bottom: 52px;
+    z-index: 5;
+}
+#bot-foot {
+    background: #eee;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+}
+
+footer ul{
+    display: flex;
+    width: 50%;
+    padding: 12px;
+    align-items: center;
+    list-style: none;
+}
+
+#foot-one {
+    justify-content: start;
+}
+
+#foot-two {
+    justify-content: flex-end;
 }
